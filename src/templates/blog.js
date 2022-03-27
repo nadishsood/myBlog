@@ -30,7 +30,7 @@ const Blog = (props) => {
   return (
     <Layout>
       <p className={blogStyles.date}>{props.data.markdownRemark.frontmatter.date}</p>
-      <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+      <h2 className={blogStyles.blogTitle} >{props.data.markdownRemark.frontmatter.title}</h2>
       
       <div className={blogStyles.blogPostStyles} dangerouslySetInnerHTML={
         {
